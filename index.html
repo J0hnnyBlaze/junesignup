@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Secure Signup | Dark Theme</title>
+        <meta name="description" content="Secure signup form with dark theme">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+        <link rel="stylesheet" href="stylesheet.css">
+    </head>
+    <body>
+        <div class="signup-container">
+            <form 
+                action="https://submit-form.com/F4xj1b4IH"
+                method="POST"
+                class="secure-form"
+                autocomplete="on"
+            >
+                <h2 class="form-title">Create Account</h2>
+                
+                <!-- CSRF Token (simplified example) -->
+                <input type="hidden" name="_csrf" value="randomly-generated-token">
+
+                <div class="form-group">
+                    <label for="fullname" class="input-label">Full Name</label>
+                    <input 
+                        type="text" 
+                        id="fullname" 
+                        name="fullname" 
+                        class="form-input"
+                        required
+                        minlength="3"
+                        pattern="[A-Za-z ]+"
+                        title="Letters and spaces only"
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="email" class="input-label">Email</label>
+                    <input 
+                        type="email" 
+                        id="email" 
+                        name="email" 
+                        class="form-input"
+                        required
+                        autocomplete="email"
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="phone" class="input-label">Phone number</label>
+                    <input 
+                        type="tel" 
+                        id="phone" 
+                        name="phone" 
+                        class="form-input"
+                        required
+                        maxlength="10"
+                        pattern="^\d+$"
+                        title="Numbers only, 10 digits maximum"
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="password" class="input-label">Password</label>
+                    <input 
+                        type="password" 
+                        id="password" 
+                        name="password" 
+                        class="form-input"
+                        required
+                        minlength="8"
+                        pattern="^(?=.*[A-Za-z])(?=.*\d).+$"
+                        title="At least 8 characters with 1 letter and 1 number"
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="confirm-password" class="input-label">Confirm Password</label>
+                    <input 
+                        type="password" 
+                        id="confirm-password" 
+                        name="confirm_password" 
+                        class="form-input"
+                        required
+                    >
+                </div>
+
+                <div class="form-group checkbox-group">
+                    <input 
+                        type="checkbox" 
+                        id="terms" 
+                        name="terms" 
+                        required
+                    >
+                    <label for="terms" class="checkbox-label">
+                        I agree to the 
+                        <a href="terms" class="privacy-link">Terms & Privacy</a>
+                    </label>
+                </div>
+
+                <button type="submit" class="submit-btn">Sign Up Securely</button>
+            </form>
+        </div>
+        <script src="" async defer></script>
+    </body>
+</html>
