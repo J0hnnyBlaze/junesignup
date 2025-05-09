@@ -1,0 +1,138 @@
+/* Base styles */
+body {
+    background-color: #121212;
+    margin: 0;
+    padding: 2rem;
+    min-height: 100vh;
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    color: #e0e0e0;
+    line-height: 1.6;
+}
+
+.signup-container {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2.5rem;
+    background-color: #1e1e1e;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+}
+
+.form-title {
+    color: #ffffff;
+    margin: 0 0 2rem 0;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.8rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.input-label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #b0b0b0;
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+.form-input {
+    width: 100%;
+    padding: 0.9rem;
+    background-color: #2d2d2d;
+    border: 2px solid #3d3d3d;
+    border-radius: 6px;
+    color: #e0e0e0;
+    font-size: 1rem;
+    transition: all 0.25s ease;
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: #569cd6;
+    box-shadow: 0 0 0 4px rgba(86, 156, 214, 0.15);
+    background-color: #252525;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    margin: 1.5rem 0;
+}
+
+.checkbox-label {
+    color: #b0b0b0;
+    margin-left: 0.75rem;
+    font-size: 0.9rem;
+}
+
+.privacy-link {
+    color: #569cd6;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.privacy-link:hover {
+    color: #4a8ec4;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 1rem;
+    background-color: #2e7d32;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.05rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.25s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.submit-btn:hover {
+    background-color: #1b5e20;
+}
+
+.security-note {
+    text-align: center;
+    margin-top: 1.5rem;
+    color: #757575;
+    font-size: 0.85rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.lock-icon {
+    font-size: 1.1rem;
+}
+
+/* Error handling */
+input:invalid {
+    border-color: #ff4444;
+}
+
+input:invalid:focus {
+    box-shadow: 0 0 0 4px rgba(255, 68, 68, 0.15);
+}
+
+/* Responsive design */
+@media (max-width: 640px) {
+    body {
+        padding: 1rem;
+    }
+    
+    .signup-container {
+        padding: 1.5rem;
+        margin: 1rem auto;
+    }
+    
+    .form-title {
+        font-size: 1.5rem;
+    }
+}
